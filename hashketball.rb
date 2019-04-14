@@ -266,4 +266,5 @@ def winning_team
    end
  end
  end
+ player_with_longest_name == long_name_steals_a_ton?
  end
