@@ -240,4 +240,6 @@ def winning_team
      team_data[:players].each do |player, stats|
        array << player.count
        binding.pry
+     end
+   end
  end 
