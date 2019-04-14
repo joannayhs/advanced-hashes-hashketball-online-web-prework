@@ -263,4 +263,7 @@ def winning_team
      team_data[:players].each do |player, stats|
    if steals_array.last == stats[:steals]
      return player
+   end
+ end
+ end
  end
