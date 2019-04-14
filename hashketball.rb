@@ -227,4 +227,9 @@ def winning_team
         end
     end
   end
+    if brooklyn_array.sum > charlotte_array.sum
+      game_hash.each do |location, team_data|
+        return team_data{:team_name]
+      end
+    end
  end
