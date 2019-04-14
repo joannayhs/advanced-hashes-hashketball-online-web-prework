@@ -266,6 +266,6 @@ def winning_team
    end
  end
  end
- long_name_steals_a_ton?
- long_name_steals_a_ton?.eql?(player_with_longest_name)
+ if long_name_steals_a_ton? == player_with_longest_name
+   return true
  end
