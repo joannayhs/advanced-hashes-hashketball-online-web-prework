@@ -231,10 +231,10 @@ def winning_team
    game_hash.each do |location, team_data|
      if location == :away
        return team_data[:team_name]
-     end
      elsif charlotte_array.sum < brooklyn_array.sum
-     if location == :home
-     return team_data[:team_name]
-   end
+       if location == :home
+       return team_data[:team_name]
+       end
+     end
  end
-end
+ end
