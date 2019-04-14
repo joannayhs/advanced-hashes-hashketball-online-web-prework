@@ -242,6 +242,9 @@ def winning_team
      end
    end
    array.sort 
-   
-   if array.last == 
+   game_hash.each do |location, team_data|
+     team_data[:players].each do |player, stats|
+   if array.last == player.length 
+     return player
+   end
  end 
