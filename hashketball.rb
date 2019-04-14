@@ -252,5 +252,15 @@ def winning_team
  end 
  
  def long_name_steals_a_ton?
-   
+   steals_array = []
+   game_hash.each do |location, team_data|
+     team_data[:players].each do |player, stats|
+       steals_array << stats[:steals]
+     end
+   end
+   steals_array.sort
+   game_hash.each do |location, team_data|
+     team_data[:location].each do |player, stats|
+   if steals_array.last == stats[:steals]
+     return player
  end
