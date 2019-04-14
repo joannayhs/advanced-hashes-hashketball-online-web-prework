@@ -260,7 +260,7 @@ def winning_team
    end
    steals_array.sort
    game_hash.each do |location, team_data|
-     team_data[:location].each do |player, stats|
+     team_data[:players].each do |player, stats|
    if steals_array.last == stats[:steals]
      return player
  end
