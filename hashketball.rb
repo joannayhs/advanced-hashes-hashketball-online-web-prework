@@ -262,9 +262,8 @@ def winning_team
    game_hash.each do |location, team_data|
      team_data[:players].each do |player, stats|
    if steals_array.last == stats[:steals]
-     return player
+     return player.eql?(player_with_longest_name)
    end
  end
  end
- player.eql?(player_with_longest_name)
  end
