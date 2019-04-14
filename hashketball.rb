@@ -218,20 +218,21 @@ def winning_team
   charlotte_array = []
   game_hash.each do |location, team_data|
     if location == :home 
-    team_data[:players].each do |player, stats|
-      brooklyn_array << stats[:points]
-    end
-      elsif location == :away
       team_data[:players].each do |player, stats|
-      charlotte_array << stats[:points]
+        brooklyn_array << stats[:points]
       end
+      elsif location == :away
+        team_data[:players].each do |player, stats|
+          charlotte_array << stats[:points]
+        end
     end
   end
   if charlotte_array.sum > brooklyn_array.sum
    game_hash.each do |location, team_data|
      if location == :away
        return team_data[:team_name]
-     elsif charlotte_array.sum < brooklyn_array.sum
+     end
+  elsif charlotte_array.sum < brooklyn_array.sum
        if location == :home
        return team_data[:team_name]
        end
