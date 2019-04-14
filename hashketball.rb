@@ -237,5 +237,4 @@ def winning_team
      return team_data[:team_name]
    end
  end
- end
 end
