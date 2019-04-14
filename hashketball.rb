@@ -227,7 +227,11 @@ def winning_team
       end
     end
   end
-  charlotte_array.collect{|x| x+x}
-  brooklyn_array.collect{|x| x+x}
-  binding.pry
+  if charlotte_array.sum > brooklyn_array.sum
+   game_hash.each do |location, team_data|
+     if location == :away
+       return team_data[:team_name]
+     end
+     elsif charlotte_array.sum < brooklyn_array.sum
+     return team_data[:team_name]
 end
