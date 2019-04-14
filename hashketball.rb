@@ -226,6 +226,5 @@ def winning_team
       charlotte_array << stats[:points]
     end
     end
-    binding.pry
   end
 end
