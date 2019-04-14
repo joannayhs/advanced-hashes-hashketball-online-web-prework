@@ -233,5 +233,7 @@ def winning_team
        return team_data[:team_name]
      end
      elsif charlotte_array.sum < brooklyn_array.sum
+     if location == :home
      return team_data[:team_name]
+   end
 end
