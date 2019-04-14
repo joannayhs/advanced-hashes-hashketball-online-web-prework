@@ -235,3 +235,8 @@ def winning_team
  end
  
  def player_with_longest_name
+   array = []
+   game_hash.each do |location, team_data|
+     team_data[:players].each do |player, stats|
+       array << player.count
+ end 
