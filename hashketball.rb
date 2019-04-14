@@ -251,4 +251,6 @@ def winning_team
  end
  end 
  
- 
+ def long_name_steals_a_ton?
+   
+ end
