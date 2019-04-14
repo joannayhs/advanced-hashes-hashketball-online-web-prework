@@ -229,4 +229,5 @@ def winning_team
   end
   charlotte_array.collect{|x| x+x}
   brooklyn_array.collect{|x| x+x}
+  binding.pry
 end
