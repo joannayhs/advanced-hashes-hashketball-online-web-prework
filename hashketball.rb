@@ -227,4 +227,6 @@ def winning_team
       end
     end
   end
+  charlotte_array.collect{|x| x+x}
+  brooklyn_array.collect{|x| x+x}
 end
