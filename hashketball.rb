@@ -224,7 +224,7 @@ def winning_team
       elsif location == :away
       team_data[:players].each do |player, stats|
       charlotte_array << stats[:points]
-    end
+      end
     end
   end
 end
