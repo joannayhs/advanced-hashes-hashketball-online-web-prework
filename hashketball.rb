@@ -241,4 +241,7 @@ def winning_team
        array << player.length
      end
    end
+   array.sort 
+   
+   if array.last == 
  end 
