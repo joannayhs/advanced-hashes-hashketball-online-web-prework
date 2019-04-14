@@ -238,7 +238,7 @@ def winning_team
    array = []
    game_hash.each do |location, team_data|
      team_data[:players].each do |player, stats|
-       binding.pry
+       array << player.length
      end
    end
  end 
