@@ -215,9 +215,16 @@ end
 
 def winning_team
   brooklyn_array = []
+  charlotte_array = []
   game_hash.each do |location, team_data|
+    if location == :home 
     team_data[:players].each do |player, stats|
-      array << stats[:points]
+      brooklyn_array << stats[:points]
+    end
+      elsif location == :away
+      team_data[:players].each do |player, stats|
+      charlotte_array << stats[:points]
+    end
     end
   end
   array
