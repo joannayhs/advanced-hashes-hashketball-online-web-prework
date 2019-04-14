@@ -247,4 +247,6 @@ def winning_team
    if array.last == player.length 
      return player
    end
+ end
+ end
  end 
